@@ -28,7 +28,6 @@ class MovieController extends GetxController {
     for (int i = 0; i < modelList.length; i++) {
       tempList.add(GestureDetector(
           onTap: () {
-            print("fml");
             Get.to(MovieDetail(modelList[i]));
           },
           child: CustomCard(modelList[i])));

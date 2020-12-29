@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gca_assignment2/model/movie.dart';
 
 class CustomCard extends StatelessWidget {
-  final Movie feedModel;
-  CustomCard(this.feedModel);
+  final Movie movie;
+  CustomCard(this.movie);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class CustomCard extends StatelessWidget {
           children: [
             Container(
               height: 180,
-              child: Image.network(feedModel.backgroundImageUrl),
+              child: Image.network(movie.backgroundImageUrl),
             ),
             Padding(
               padding: EdgeInsets.only(left: 8),
@@ -28,7 +28,7 @@ class CustomCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      feedModel.title,
+                      movie.title,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
@@ -36,7 +36,7 @@ class CustomCard extends StatelessWidget {
                         fontSize: 24,
                       ),
                     ),
-                    Text("${feedModel.year}",
+                    Text("${movie.year}",
                         maxLines: 1,
                         style: TextStyle(
                             fontStyle: FontStyle.italic,
@@ -44,7 +44,7 @@ class CustomCard extends StatelessWidget {
                             fontSize: 18)),
                     SizedBox(height: 2),
                     Text(
-                      feedModel.descriptionIntro,
+                      movie.descriptionIntro,
                       maxLines: 5,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(fontSize: 14),
