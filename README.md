@@ -3,9 +3,7 @@
 <p>Hello World! </p>
 <p>This is a new Flutter project. Implementing things from week 3.</p>
 
-## Screenshot : 
-
-![Screenshot : List Page](lib/asset/list.jpg)
-![Screenshot : Detail Page](lib/asset/detail.jpg)
-
-
+## Screenshots : 
+|List Page|Detail Page|
+|-------------|---------------|
+|![Screenshot : List Page](lib/asset/list.jpg)|![Screenshot : Detail Page](lib/asset/detail.jpg)|
