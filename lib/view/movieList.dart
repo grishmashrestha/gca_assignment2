@@ -16,9 +16,6 @@ class _MovieListState extends State<MovieList> {
 
   @override
   Widget build(BuildContext context) {
-    GestureDetector(
-      onTap: () => ,
-    );
     return Card(
       elevation: 20,
       color: Colors.black,
