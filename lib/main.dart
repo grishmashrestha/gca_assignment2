@@ -27,15 +27,12 @@ class Home extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
+    // return MovieList();
     return Scaffold(
       appBar: AppBar(
         title: Text(this.title),
       ),
-      body: Center(
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [MovieList()]),
-      ),
+      body: Center(child: MovieList()),
     );
   }
 }
