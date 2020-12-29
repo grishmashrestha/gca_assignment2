@@ -1,22 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:gca_assignment2/model/movie.dart';
 
-class MovieList extends StatefulWidget {
-  @override
-  _MovieListState createState() => _MovieListState();
-}
-
-class _MovieListState extends State<MovieList> {
-  int id = 25435;
-  String name = "Alpha and OmegaAlpha and OmegaAlpha and OmegaAlpha and Omega";
-  String descriptionIntro =
-      "Four independent stories set in modern China about random acts of violence.Four independent stories set in modern China about random acts of violence.Four independent stories set in modern China about random acts of violence.Four independent stories set in modern China about random acts of violence.";
-  int year = 2010;
-
+class MovieList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Card(
+    int id = 25435;
+    String name =
+        "Alpha and Omega Alpha and Omega Alpha and OmegaAlpha and Omega";
+    String descriptionIntro =
+        "Four independent stories set in modern China about random acts of violence. Four independent stories set in modern China about random acts of violence.Four independent stories set in modern China about random acts of violence.Four independent stories set in modern China about random acts of violence.";
+    int year = 2010;
+    var card = Card(
       elevation: 20,
       color: Colors.black,
       child: Padding(
@@ -66,6 +60,15 @@ class _MovieListState extends State<MovieList> {
           ],
         ),
       ),
+    );
+    return new GestureDetector(
+      onTap: () {
+        final snackBar = SnackBar(
+          content: Text('Yay! A SnackBar!'),
+        );
+        Scaffold.of(context).showSnackBar(snackBar);
+      },
+      child: card,
     );
   }
 }
