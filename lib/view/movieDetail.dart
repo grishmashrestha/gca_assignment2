@@ -54,9 +54,12 @@ class MovieDetail extends StatelessWidget {
             SizedBox(height: 5),
             Text(
               movie.descriptionIntro,
-              maxLines: 10,
+              maxLines: 20,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(fontSize: 14),
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey,
+              ),
             ),
           ],
         ),
